@@ -18,14 +18,14 @@ export default {
         },
         borderRadius: {
             'regular': '3.2rem',
-            'ph':'2.4rem',
+            'ph': '2.4rem',
             'md': '0.375rem',
             '2xl': "0.8rem"
         },
         backgroundImage: {
             dsBgImg: "url('src/assets/img/ring.png')",
             gridBgImg: "url('src/assets/img/grid-bg.png')",
-            cardBgImg:"url('src/assets/img/cards.png'), url('src/assets/img/grid-bg.png')",
+            cardBgImg: "url('src/assets/img/grid-bg.png')",
             linearBg: "linear-gradient(180deg, rgba(243, 243, 243, 0) 36.47%, #F3F3F3 81.87%)"
         },
         backgroundSize: {
@@ -41,10 +41,10 @@ export default {
             'lg': { 'min': '1024px', 'max': '1279px' },
             'xl': { 'min': '1280px', 'max': '1535px' },
             '2xl': { 'min': '1536px' },
-            'pad':{'min':'640px', 'max':'1025px'},
-            'minipad':{'min':'640px', 'max':'820px'},
-            'propad':{'min':'821px', 'max':'1025px'},
-            "ph":{'min':'370px', 'max':'432px'},
+            'pad': { 'min': '640px', 'max': '1025px' },
+            'minipad': { 'min': '640px', 'max': '820px' },
+            'propad': { 'min': '821px', 'max': '1025px' },
+            "ph": { 'min': '370px', 'max': '432px' },
         },
         textColor: {
             "black": "rgba(0,0,0,1)",

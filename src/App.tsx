@@ -21,9 +21,9 @@ function App() {
             <Eco />
             <Edge />
             <Cube />
-            {/* <Stories />
+            {/* <Stories /> */}
             <Support />
-            <Foot /> */}
+            <Foot />
         </div>
     );
 }
