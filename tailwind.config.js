@@ -41,10 +41,12 @@ export default {
             'lg': { 'min': '1024px', 'max': '1279px' },
             'xl': { 'min': '1280px', 'max': '1535px' },
             '2xl': { 'min': '1536px' },
-            'pad': { 'min': '640px', 'max': '1025px' },
+            'pad': { 'min': '640px', 'max': '1525px' },
             'minipad': { 'min': '640px', 'max': '820px' },
             'propad': { 'min': '821px', 'max': '1025px' },
-            "ph": { 'min': '370px', 'max': '432px' },
+            'maxpad': { 'min': '1026px', 'max': '1525px' },
+            'padpm': { 'min': '1526px', 'max': '1800px' },
+            "ph": { 'min': '0px', 'max': '640px' },
         },
         textColor: {
             "black": "rgba(0,0,0,1)",
@@ -64,6 +66,7 @@ export default {
             "bgblack": "rgba(54,52,68,1)",
             "bgpurple": "rgba(178,160,229,1)",
             "bghalfwhite": "rgba(255,255,255,0.39)",
+            "borderlinear": "rgba(168,140,244,1)"
         }
     },
     plugins: [],

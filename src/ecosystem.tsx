@@ -2,7 +2,7 @@ import { Title } from "./componments";
 
 function Card() {
     return (
-        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bggray px-16 py-16 border rounded-regular mt-16 pad:h-[26vh] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center">
+        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bggray px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh]">
             <div className="flex flex-col justify-between w-[60%] ph:w-[68%]">
                 <div>
                     <div className="bg-bgpurple p-[2px] font-MonoMedium text-2xl text-black inline-block py-1.5 px-2 rounded-md">Data Contributors</div>
@@ -31,14 +31,14 @@ function Card() {
                     </div>
                 </div>
             </div>
-            <img className="h-full ph:w-[32%] ph:h-[80%]" src="src/assets/img/mail.png" />
+            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[36%] maxpad:h-[auto] maxpad:self-center" src="src/assets/img/mail.png" />
         </div>
     );
 }
 
 function CardB() {
     return (
-        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bgblack px-16 py-16 border rounded-regular mt-16 pad:h-[26vh] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center">
+        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bgblack px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh]">
             <div className="flex flex-col justify-between w-[60%] ph:w-[68%]">
                 <div>
                     <div className="bg-bgpurple p-[2px] font-MonoMedium text-2xl text-black inline-block py-1.5 px-2 rounded-md">Data Nodes</div>
@@ -66,7 +66,7 @@ function CardB() {
                     </div>
                 </div>
             </div>
-            <img className="h-full ph:w-[32%] ph:h-[80%]" src="src/assets/img/eco-smile.png" />
+            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[36%] maxpad:h-[auto] maxpad:self-center" src="src/assets/img/eco-smile.png" />
         </div>
     );
 }

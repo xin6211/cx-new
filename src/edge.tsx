@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { Title, Gap } from "./componments";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Virtual } from "swiper/modules";
 import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -106,14 +106,56 @@ function Slider() {
     const swiper = useRef<SwiperRef>(null);
     return (
         <div className="bg-bgblack w-[full] h-[56rem] pt-32 pb-16 flex flex-col justify-between border rounded-regular my-16 pad:pt-28 pad:pb-12 ph:pt-10 ph:pb-12 ph:mt-10 ">
-            <div className="flex flex-row">
+            <div>
                 <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    modules={[Navigation, Pagination, Scrollbar, A11y, Virtual]}
                     spaceBetween={50}
-                    slidesPerView={1}
+                    slidesPerView={'auto'}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log("slide change")}
                     ref={swiper}
+                    breakpoints={
+                        {
+                            640: {
+                                slidesPerView: 2.5,
+                                spaceBetween: 20
+                            },
+                            750: {
+                                slidesPerView: 3,
+                                spaceBetween: 20
+                            },
+                            820: {
+                                slidesPerView: 2.5,
+                                spaceBetween: 20
+                            },
+                            960: {
+                                slidesPerView: 3,
+                                spaceBetween: 20
+                            },
+                            1025: {
+                                slidesPerView: 3,
+                                spaceBetween: 20
+                            },
+                            1160: {
+                                slidesPerView: 1.5,
+                                spaceBetween: 20
+                            },
+                            // when window width is >= 480px
+                            1200: {
+                                slidesPerView: 2,
+                                spaceBetween: 30
+                            },
+                            1480: {
+                                slidesPerView: 2.5,
+                                spaceBetween: 30
+                            },
+                            // when window width is >= 640px
+                            1800: {
+                                slidesPerView: 3.5,
+                                spaceBetween: 40
+                            }
+                        }
+                    }
                 >
                     <SwiperSlide>
                         <SliderCard
@@ -223,7 +265,7 @@ function Slider() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
