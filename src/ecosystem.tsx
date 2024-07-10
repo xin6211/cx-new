@@ -1,4 +1,6 @@
 import { Title } from "./componments";
+import mailPng from "../src/assets/img/mail.png";
+import smilePng from "../src/assets/img/eco-smile.png";
 
 function Card() {
     return (
@@ -31,7 +33,7 @@ function Card() {
                     </div>
                 </div>
             </div>
-            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[36%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center" src="src/assets/img/mail.png" />
+            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[36%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center" src={mailPng} />
         </div>
     );
 }
@@ -66,7 +68,7 @@ function CardB() {
                     </div>
                 </div>
             </div>
-            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[36%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center" src="src/assets/img/eco-smile.png" />
+            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[36%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center" src={smilePng} />
         </div>
     );
 }

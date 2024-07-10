@@ -1,4 +1,5 @@
 import { Title } from "./componments";
+import cardPng from "../src/assets/img/cards.png";
 
 function Cube() {
     return (
@@ -12,12 +13,11 @@ function Cube() {
                         and products of CogniXphere.
                     </div>
                 </div>
-                <img src="src/assets/img/cards.png" alt="" className="h-[140%] rotate-[20deg] pad:w-[60%] pad:h-[auto]" />
+                <img src={cardPng} alt="" className="h-[140%] rotate-[20deg] pad:w-[60%] pad:h-[auto]" />
             </div>
             <div className="hidden relative ph:pb-0 ph:flex flex flex-col justify-end items-center border border-black rounded-regular bg-cardBgImg bg-no-repeat bg-dsBgPos bg-bggray h-[42rem] px-8 overflow-hidden drop-shadow-cardShadow pb-12">
-                <img className="absolute rotate-[15deg] bottom-[-10%] w-[86%] z-[-2]" src="src/assets/img/cards.png" />
-                <div className="absolute bg-linearBg w-full h-full z-[-1]">
-                </div>
+                <img className="absolute rotate-[15deg] bottom-[-10%] w-[86%] z-[-2]" src={cardPng} />
+                <div className="absolute bg-linearBg w-full h-full z-[-1]"></div>
                 <div className="ph:mb-12">
                     <div className="bg-bgpurple p-[2px] font-MonoMedium text-2xl text-black inline-block py-1.5 px-2 rounded-md mb-8">Axon Cube</div>
                     <div className="font-Mono text-black w-full">

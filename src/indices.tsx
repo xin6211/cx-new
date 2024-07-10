@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Title, GapL, Gap } from "./componments";
+import id0Png from "../src/assets/img/id0.png";
+import id2Png from "../src/assets/img/id2.png";
+import id3Png from "../src/assets/img/id3.png";
 
 function Card({ title, img, text }: { title: string; img: string; text: string }) {
     return (
@@ -273,20 +276,12 @@ function Indices() {
         <div className="mt-[6rem]">
             <Title text="Sentiment Data and Indices" />
             <div className="flex flex-row justify-between ph:flex-col">
-                <Card img="src/assets/img/id0.png" title="FOMO & FUD" text="Provide a multi-token market FUD & FOMO ratio to offer a snapshot of current market conditions." />
-                <Card
-                    img="src/assets/img/id2.png"
-                    title="8 KEY EMOTIONS"
-                    text="Capture eight key trading emotions in the market: joy, trust, fear, surprise, sadness, disgust, anger, and anticipation."
-                />
-                <Card img="src/assets/img/id3.png" title="SENTIMENT INDEX" text="An innovative index that combines social sentiment with secondary market indicators." />
-                <CardPh img="src/assets/img/id0.png" title="FOMO & FUD" text="Provide a multi-token market FUD & FOMO ratio to offer a snapshot of current market conditions." />
-                <CardPh
-                    img="src/assets/img/id2.png"
-                    title="8 KEY EMOTIONS"
-                    text="Capture eight key trading emotions in the market: joy, trust, fear, surprise, sadness, disgust, anger, and anticipation."
-                />
-                <CardPh img="src/assets/img/id3.png" title="SENTIMENT INDEX" text="An innovative index that combines social sentiment with secondary market indicators." />
+                <Card img={id0Png} title="FOMO & FUD" text="Provide a multi-token market FUD & FOMO ratio to offer a snapshot of current market conditions." />
+                <Card img={id2Png} title="8 KEY EMOTIONS" text="Capture eight key trading emotions in the market: joy, trust, fear, surprise, sadness, disgust, anger, and anticipation." />
+                <Card img={id3Png} title="SENTIMENT INDEX" text="An innovative index that combines social sentiment with secondary market indicators." />
+                <CardPh img={id0Png} title="FOMO & FUD" text="Provide a multi-token market FUD & FOMO ratio to offer a snapshot of current market conditions." />
+                <CardPh img={id2Png} title="8 KEY EMOTIONS" text="Capture eight key trading emotions in the market: joy, trust, fear, surprise, sadness, disgust, anger, and anticipation." />
+                <CardPh img={id3Png} title="SENTIMENT INDEX" text="An innovative index that combines social sentiment with secondary market indicators." />
             </div>
             <GapL css="mt-[1.6rem]" />
             <Grid />

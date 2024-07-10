@@ -1,4 +1,6 @@
 import { Title, GapL } from "./componments";
+import pricePng from "../src/assets/img/price.png";
+import smilePng from "../src/assets/img/smile.png";
 
 function Price() {
     return (
@@ -13,7 +15,7 @@ function Price() {
                     <div className="font-Mono text-black">Smart traders blend these sentiment signals with their trading strategies to pinpoint the perfect moments to enter and exit the market.</div>
                 </div>
                 <div className="bg-bggray border border-black rounded-regular w-[22rem] h-[16rem] drop-shadow-cardShadow flex flex-row justify-center pad:w-[26%] ph:h-full ph:w-full ph:col-start-2">
-                    <img src="./src/assets/img/price.png" className="ph:scale-150"></img>
+                    <img src={pricePng} className="ph:scale-150"></img>
                 </div>
                 <div className="hidden ph:flex ph:flex-col ph:row-start-1 ph:col-start-1 ph:justify-between">
                     <div className="bg-bgpurple p-[2px] font-MonumentRegular text-3xl text-black inline-block py-1.5 px-2 rounded-md">Sentiment affects price</div>
@@ -27,7 +29,7 @@ function Price() {
             </div>
             <div className="flex flex-row justify-between mt-[3.2rem] pad:mt-0 ph:grid ph:grid-rows-[8.8rem_1fr] ph:grid-cols-2 ph:gap-8 ph:mt-0">
                 <div className="bg-bggray border border-black rounded-regular w-[22rem] h-[16rem] drop-shadow-cardShadow flex flex-row justify-center pad:w-[26%] ph:h-full ph:w-full ph:col-start-1">
-                    <img src="./src/assets/img/smile.png"></img>
+                    <img src={smilePng}></img>
                 </div>
                 <div className="hidden ph:flex ph:flex-col ph:row-start-1 ph:col-start-2 ph:justify-between">
                     <div className="bg-bgpurple p-[2px] font-MonumentRegular text-3xl text-black inline-block py-1.5 px-2 rounded-md">Emotion AI</div>

@@ -1,4 +1,5 @@
 import { Title } from "./componments";
+import smilePng from "../src/assets/img/smile.png";
 
 function Emo() {
     return (
@@ -9,7 +10,7 @@ function Emo() {
             </div>
             <div className="flex flex-row justify-between">
                 <div className="bg-bggray border border-black rounded-regular w-[20%] h-[16rem] drop-shadow-cardShadow flex flex-row justify-center">
-                    <img src="./src/assets/img/smile.png"></img>
+                    <img src={smilePng}></img>
                 </div>
                 <div className="flex flex-col justify-between bg-bggray border border-black rounded-regular drop-shadow-cardShadow w-[70%] py-[3rem] px-[2.4rem]">
                     <div className="font-Mono text-black">

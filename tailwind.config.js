@@ -23,9 +23,9 @@ export default {
             '2xl': "0.8rem"
         },
         backgroundImage: {
-            dsBgImg: "url('src/assets/img/ring.png')",
-            gridBgImg: "url('src/assets/img/grid-bg.png')",
-            cardBgImg: "url('src/assets/img/grid-bg.png')",
+            dsBgImg: "url('../src/assets/img/ring.png')",
+            gridBgImg: "url('../src/assets/img/grid-bg.png')",
+            cardBgImg: "url('../src/assets/img/grid-bg.png')",
             linearBg: "linear-gradient(180deg, rgba(243, 243, 243, 0) 36.47%, #F3F3F3 81.87%)"
         },
         backgroundSize: {

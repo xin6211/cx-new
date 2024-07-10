@@ -6,6 +6,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import w1Png from "../src/assets/img/slide/w1.png";
+import w2Png from "../src/assets/img/slide/w2.png";
+import w3Png from "../src/assets/img/slide/w3.png";
+import w4Png from "../src/assets/img/slide/w4.png";
+import w5Png from "../src/assets/img/slide/w5.png";
+import w1SmallPng from "../src/assets/img/slide/w1-small.png";
+import w2SmallPng from "../src/assets/img/slide/w2-small.png";
+import edge1 from "../src/assets/img/edge-1.png";
+import edge2 from "../src/assets/img/edge-2.png";
+import edge3 from "../src/assets/img/edge-3.png";
+import edge4 from "../src/assets/img/edge-4.png";
 
 function SliderCard({ img1, img2, name, id, text }: { img1: string; img2: string; name: string; id: string; rank?: string; bouns?: string; text: string }) {
     return (
@@ -110,115 +121,71 @@ function Slider() {
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y, Virtual]}
                     spaceBetween={50}
-                    slidesPerView={'auto'}
+                    slidesPerView={"auto"}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log("slide change")}
                     ref={swiper}
-                    breakpoints={
-                        {
-                            640: {
-                                slidesPerView: 2.5,
-                                spaceBetween: 20
-                            },
-                            750: {
-                                slidesPerView: 3,
-                                spaceBetween: 20
-                            },
-                            820: {
-                                slidesPerView: 2.5,
-                                spaceBetween: 20
-                            },
-                            960: {
-                                slidesPerView: 3,
-                                spaceBetween: 20
-                            },
-                            1025: {
-                                slidesPerView: 3,
-                                spaceBetween: 20
-                            },
-                            1160: {
-                                slidesPerView: 1.5,
-                                spaceBetween: 20
-                            },
-                            // when window width is >= 480px
-                            1200: {
-                                slidesPerView: 2,
-                                spaceBetween: 30
-                            },
-                            1480: {
-                                slidesPerView: 2.5,
-                                spaceBetween: 30
-                            },
-                            // when window width is >= 640px
-                            1800: {
-                                slidesPerView: 3.5,
-                                spaceBetween: 40
-                            }
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2.5,
+                            spaceBetween: 20
+                        },
+                        750: {
+                            slidesPerView: 3,
+                            spaceBetween: 20
+                        },
+                        820: {
+                            slidesPerView: 2.5,
+                            spaceBetween: 20
+                        },
+                        960: {
+                            slidesPerView: 3,
+                            spaceBetween: 20
+                        },
+                        1025: {
+                            slidesPerView: 3,
+                            spaceBetween: 20
+                        },
+                        1160: {
+                            slidesPerView: 1.5,
+                            spaceBetween: 20
+                        },
+                        // when window width is >= 480px
+                        1200: {
+                            slidesPerView: 2,
+                            spaceBetween: 30
+                        },
+                        1480: {
+                            slidesPerView: 2.5,
+                            spaceBetween: 30
+                        },
+                        // when window width is >= 640px
+                        1800: {
+                            slidesPerView: 3.5,
+                            spaceBetween: 40
                         }
-                    }
+                    }}
                 >
                     <SwiperSlide>
-                        <SliderCard
-                            img1="src/assets/img/slide/w1.png"
-                            img2="src/assets/img/slide/w1-small.png"
-                            name="Olivia Taylor"
-                            id="COGEW0080"
-                            text="Fantastic home organizer with a cat and puppy."
-                        />
+                        <SliderCard img1={w1Png} img2={w1SmallPng} name="Olivia Taylor" id="COGEW0080" text="Fantastic home organizer with a cat and puppy." />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard
-                            img1="src/assets/img/slide/w2.png"
-                            img2="src/assets/img/slide/w1-small.png"
-                            name="Alice Lee"
-                            id="COGEW0016"
-                            text="An innovative engineer with a thirst for design challenges."
-                        />
+                        <SliderCard img1={w2Png} img2={w1SmallPng} name="Alice Lee" id="COGEW0016" text="An innovative engineer with a thirst for design challenges." />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard
-                            img1="src/assets/img/slide/w3.png"
-                            img2="src/assets/img/slide/w2-small.png"
-                            name="Naomi Davis"
-                            id="COGEW0049"
-                            text="Psychologist known for her keen insight and empathetic approach."
-                        />
+                        <SliderCard img1={w3Png} img2={w2SmallPng} name="Naomi Davis" id="COGEW0049" text="Psychologist known for her keen insight and empathetic approach." />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard
-                            img1="src/assets/img/slide/w4.png"
-                            img2="src/assets/img/slide/w2-small.png"
-                            name="Jamal Washington"
-                            id="COGEW0012"
-                            text="Resilient entrepreneur chasing ambitious dreams with confidence."
-                        />
+                        <SliderCard img1={w4Png} img2={w2SmallPng} name="Jamal Washington" id="COGEW0012" text="Resilient entrepreneur chasing ambitious dreams with confidence." />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard
-                            img1="src/assets/img/slide/w5.png"
-                            img2="src/assets/img/slide/w2-small.png"
-                            name="Ethan Zheng"
-                            id="COGEW0104"
-                            text="A gentle pediatric dentist with hobbies of playing soccer"
-                        />
+                        <SliderCard img1={w5Png} img2={w2SmallPng} name="Ethan Zheng" id="COGEW0104" text="A gentle pediatric dentist with hobbies of playing soccer" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard
-                            img1="src/assets/img/slide/w5.png"
-                            img2="src/assets/img/slide/w2-small.png"
-                            name="Sofia Hernandez"
-                            id="COGEW0094"
-                            text="Loves dancing and music, and loves to drink red wine with cheese!"
-                        />
+                        <SliderCard img1={w5Png} img2={w2SmallPng} name="Sofia Hernandez" id="COGEW0094" text="Loves dancing and music, and loves to drink red wine with cheese!" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard
-                            img1="src/assets/img/slide/w5.png"
-                            img2="src/assets/img/slide/w2-small.png"
-                            name="Ruth Miller"
-                            id="COGEW0160"
-                            text="Retired schoolteacher, enjoys making brownies and cookies."
-                        />
+                        <SliderCard img1={w5Png} img2={w2SmallPng} name="Ruth Miller" id="COGEW0160" text="Retired schoolteacher, enjoys making brownies and cookies." />
                     </SwiperSlide>
                 </Swiper>
             </div>
@@ -265,7 +232,7 @@ function Slider() {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     );
 }
 
@@ -294,13 +261,13 @@ function Edge() {
                 <Card
                     title="Offer Expert Web3 Information and Knowledge Support"
                     text="Axon Edge has been trained on a comprehensive 2T+ database specifically focused on Web3, enabling it to acquire an omniscient perspective in the Web3."
-                    img="src/assets/img/edge-1.png"
+                    img={edge1}
                     zindex="4"
                 />
                 <Card
                     title="Engage with Users Through Emotional Dialogue for Deeper Insights"
                     text="With its unparalleled emotional intelligence, Axon Edge engages users in in-depth and emotionally-driven conversations to effectively capture their attitudes towards specific tokens through casual dialogue."
-                    img="src/assets/img/edge-2.png"
+                    img={edge2}
                     left={true}
                     rotate={true}
                     zindex="3"
@@ -308,13 +275,13 @@ function Edge() {
                 <Card
                     title="Provide Immersive Emotional Companionship to Users"
                     text="Experience advanced emotional companionship with rich conversations powered by cutting-edge NLP, exceptional emotional intelligence for tailored feedback, and long-term memory for personalized interactions."
-                    img="src/assets/img/edge-3.png"
+                    img={edge3}
                     zindex="2"
                 />
                 <Card
                     title="Unveil User On-chain Behavioral Preferences for Enhanced Sentiment Analysis"
                     text="Axon Edge gains a deeper understanding of users' on-chain behavioral preferences, allowing it to create personalized user tags to enhance sentiment analysis capabilities."
-                    img="src/assets/img/edge-4.png"
+                    img={edge4}
                     left={true}
                     rotate={true}
                     zindex="1"
