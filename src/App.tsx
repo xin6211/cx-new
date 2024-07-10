@@ -5,14 +5,13 @@ import Indices from "./indices";
 import Eco from "./ecosystem";
 import Edge from "./edge";
 import Cube from "./cube";
-import Stories from "./stories";
 import Support from "./supported";
 import Foot from "./foot";
-import { Gap, GapL } from "./componments";
+import { Gap } from "./componments";
 
 function App() {
     return (
-        <div className="flex flex-col px-[12rem] pt-[10rem] pad:px-pxpad pad:pt-[8rem] ph:px-pxph ph:pt-[6.4rem] padpm:px-[8rem]">
+        <div className="flex flex-col px-[12rem] pt-[10rem] pad:px-pxpad pad:pt-[8rem] ph:px-pxph ph:pt-[6.4rem] padpm:px-[8rem] maxpad:px-[6rem]">
             <Header />
             <Home />
             <Gap />

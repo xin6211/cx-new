@@ -3,7 +3,7 @@ import { Title, GapL, Gap } from "./componments";
 
 function Card({ title, img, text }: { title: string; img: string; text: string }) {
     return (
-        <div className="flex flex-col border border-black bg-white rounded-regular drop-shadow-cardShadow w-[28%] py-[2rem] px-[2rem] pad:w-[32%] pad:aspect-square ph:w-full ph:hidden">
+        <div className="flex flex-col border border-black bg-white rounded-regular drop-shadow-cardShadow w-[28%] py-[2rem] px-[2rem] pad:w-[32%] pad:aspect-square maxpad:w-[30%] ph:w-full ph:hidden">
             <div className="flex flex-row items-center">
                 <img src={img} className="w-[6rem] h-[6rem] pad:w-[4rem] pad:h-[4rem]" />
                 <div className="text-black font-MonoMedium text-3xl ml-[1.6rem] pad:text-[1.6rem]">{title}</div>
@@ -135,12 +135,12 @@ function GRect({ title, text, typ }: { title: string; text: string; typ: boolean
 
 function Grid() {
     return (
-        <div className="flex flex-col h-[calc(32rem+16vh)] w-full pad:h-[calc(22rem+12vh)]">
-            <div className="flex flex-row justify-between items-end h-[50%] mb-[1.5%]">
+        <div className="flex flex-col h-[calc(32rem+16vh)] w-full pad:h-[calc(22rem+12vh)] pad:min-h-[500px] maxpad:h-[36rem]">
+            <div className="flex flex-row justify-between items-end h-[50%] maxpad:h-[60%] mb-[1.5%]">
                 <GCard title={"Key News & Events"} text="Track key news and events that could impact token prices." />
                 <GRect typ={true} title="Top/ Trending Tokens & NFTs" text="Capture the real-time market sentiment of thousands of tokens and NFTs." />
             </div>
-            <div className="flex flex-row justify-between h-[50%] mt-[1.5%]">
+            <div className="flex flex-row justify-between h-[50%] maxpad:h-[60%] mt-[1.5%]">
                 <GRect typ={false} title="KOL & Community Attitudes" text="Monitor the sentiments of top global KOLs and communities to stay ahead of market trends." />
                 <GCardR title={"Hot Airdrops"} text="Discover hot airdrop programs and never miss an opportunity to profit." />
             </div>
@@ -220,7 +220,7 @@ function Chat() {
 
 function Board() {
     return (
-        <div className="flex flex-col bg-bggray h-[100vh] rounded-regular mb-[12rem] w-full pad:h-[48vh] ph:h-[42vh]">
+        <div className="flex flex-col bg-bggray h-[100vh] rounded-regular mb-[12rem] w-full pad:h-[48vh] pad:min-h-[600px] ph:h-[42vh] maxpad:h-[120vh]">
             <div className="flex flex-row justify-between items-center px-[calc(2rem+2vw)] h-[calc(2rem+6vh)] pad:h-[10%]">
                 <svg className="pad:w-[4.2rem] ph:w-[3.6rem]" width="80" height="72" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_619_3803)">
