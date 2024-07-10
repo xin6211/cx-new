@@ -20,7 +20,7 @@ import edge4 from "../src/assets/img/edge-4.png";
 
 function SliderCard({ img1, img2, name, id, text }: { img1: string; img2: string; name: string; id: string; rank?: string; bouns?: string; text: string }) {
     return (
-        <div className="flex flex-col w-[26rem] border border-bgblack rounded-regular overflow-hidden pad:w-[24rem] ph:w-[70vw]">
+        <div className="flex flex-col w-[26rem] border border-bgblack rounded-regular overflow-hidden pad:w-[24rem] ph:w-[70vw] ph:ml-[12vw]">
             <div className="relative">
                 <img src={img1} alt="" className="w-full" />
                 <div className="absolute flex justify-between top-[84%] right-2">
