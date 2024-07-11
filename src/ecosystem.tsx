@@ -33,7 +33,7 @@ function Card() {
                     </div>
                 </div>
             </div>
-            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[30%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center padpm:w-[28%] padpm:h-[auto]" src={mailPng} />
+            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[30%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center padpm:w-[32%] padpm:h-[auto]" src={mailPng} />
         </div>
     );
 }
@@ -68,7 +68,7 @@ function CardB() {
                     </div>
                 </div>
             </div>
-            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[30%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center padpm:w-[28%] padpm:h-[auto]" src={smilePng} />
+            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[30%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center padpm:w-[32%] padpm:h-[auto]" src={smilePng} />
         </div>
     );
 }

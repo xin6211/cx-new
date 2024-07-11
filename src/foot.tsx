@@ -1,6 +1,6 @@
 function Foot() {
     return (
-        <div className="bg-bgblack flex flex-row justify-between py-28 px-24 h-[24rem] mt-48 rounded-t-[3.2rem] pad:px-16 pad:py-18 ph:mt-20 ph:flex-col ph:px-12 ph:py-16 ph:h-[30rem]">
+        <div className="bg-bgblack flex flex-row justify-between py-28 px-24 h-[24rem] mt-24 rounded-t-[3.2rem] pad:px-16 pad:py-18 ph:mt-20 ph:flex-col ph:px-12 ph:py-16 ph:h-[30rem]">
             <div className="flex flex-col justify-between">
                 <div className="flex flex-row justify-between items-center w-[60%]">
                     <svg className="ph:w-[2.4rem] ph:h-[2.4rem]" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">

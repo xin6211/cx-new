@@ -234,16 +234,16 @@ function Slider() {
     );
 }
 
-function Card({ title, text, img, left = false, rotate = false, zindex }: { title: string; text: string; img: string; left?: boolean; rotate?: boolean; zindex: string }) {
+function Card({ title, text, img, left = false, rotate = false, zindex, textWidth, textWidthPm }: { title: string; text: string; img: string; left?: boolean; rotate?: boolean; zindex: string; textWidth: string, textWidthPm: string }) {
     const flexReserver = left ? " flex flex-row-reverse justify-between" : " flex flex-row justify-between";
     const r = rotate ? " rotate-[5deg]" : "";
     return (
-        <div className={"px-24 py-16 bg-bggray border rounded-regular drop-shadow-cardShadow pad:py-8 pad:px-10 maxpad:py-14 ph:px-6 ph:py-8 ph:items-center" + flexReserver + r} style={{ zIndex: zindex }}>
-            <div className="w-[60%] flex flex-col justify-around">
+        <div className={"px-24 py-16 bg-bggray border border-black rounded-regular drop-shadow-cardShadow pad:py-8 pad:px-10 maxpad:py-14 ph:px-6 ph:py-8 ph:items-center padpm:h-[20rem] pad:h-[18rem] maxpad:h-[22rem]" + flexReserver + r} style={{ zIndex: zindex }}>
+            <div className={`w-[${textWidth}%] flex flex-col justify-around padpm:w-[${textWidthPm}%]`}>
                 <div className="font-MonoMedium text-black text-3xl ph:text-xl">{title}</div>
                 <div className="font-Mono text-black">{text}</div>
             </div>
-            <img src={img} className="h-[20vh] pad:h-[14vh] ph:h-[8vh] pad:min-h-[12rem]" />
+            <img src={img} className="h-full w-auto ph:h-[8vh]" />
         </div>
     );
 }
@@ -261,6 +261,8 @@ function Edge() {
                     text="Axon Edge has been trained on a comprehensive 2T+ database specifically focused on Web3, enabling it to acquire an omniscient perspective in the Web3."
                     img={edge1}
                     zindex="4"
+                    textWidth="64"
+                    textWidthPm="64"
                 />
                 <Card
                     title="Engage with Users Through Emotional Dialogue for Deeper Insights"
@@ -269,12 +271,16 @@ function Edge() {
                     left={true}
                     rotate={true}
                     zindex="3"
+                    textWidth="64"
+                    textWidthPm="64"
                 />
                 <Card
                     title="Provide Immersive Emotional Companionship to Users"
                     text="Experience advanced emotional companionship with rich conversations powered by cutting-edge NLP, exceptional emotional intelligence for tailored feedback, and long-term memory for personalized interactions."
                     img={edge3}
                     zindex="2"
+                    textWidth="64"
+                    textWidthPm="64"
                 />
                 <Card
                     title="Unveil User On-chain Behavioral Preferences for Enhanced Sentiment Analysis"
@@ -283,6 +289,8 @@ function Edge() {
                     left={true}
                     rotate={true}
                     zindex="1"
+                    textWidth="56"
+                    textWidthPm="64"
                 />
             </div>
             <Gap css="mb-[1.6rem]" />
