@@ -61,7 +61,7 @@ function CardPh({ title, img, text }: { title: string; img: string; text: string
 function GCard({ title, text }: { title: string; text: string }) {
     return (
         <div className="flex flex-col justify-between h-full w-[30%] bg-bggray border border-black rounded-regular drop-shadow-cardShadow py-[calc(1rem+2vh)] px-[calc(1rem+2vw)] pad:py-8 ph:px-4">
-            <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple p-2 max-w-[calc(6.4vw+8rem)] pad:text-[1.2rem] pad:px-2 ph:text-[1.2rem]">{title}</div>
+            <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple p-2 pad:text-[1.2rem] pad:px-2 ph:text-[1.2rem] maxpad:max-w-full padpm:text-[1.4rem]">{title}</div>
             <div className="font-Mono text-black text-lg pad:text-[1rem]">{text}</div>
             <div className="flex flex-row items-center">
                 <svg className="pad:w-[3rem] pad:h-[3rem] ph:w-[3rem] ph:h-[3rem]" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@ function GCardR({ title, text }: { title: string; text: string }) {
     return (
         <div className="flex flex-col justify-between h-full w-[30%] bg-bggray border border-black rounded-regular drop-shadow-cardShadow py-[calc(1rem+2vh)] px-[calc(1rem+2vw)] pad:py-8 pad:py-8 ph:px-4">
             <div>
-                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple p-2 inline-block pad:text-[1.4rem] ph:text-[1.2rem]">{title}</div>
+                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple p-2 inline-block pad:text-[1.4rem] ph:text-[1.2rem] padpm:text-[1.4rem]">{title}</div>
             </div>
             <div className="font-Mono text-black text-lg pad:text-[1rem]">{text}</div>
             <div className="flex flex-row items-center">
@@ -104,7 +104,7 @@ function GRect({ title, text, typ }: { title: string; text: string; typ: boolean
     return (
         <div className={rootC + bg}>
             <div>
-                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bggray p-2 inline-block pad:text-[1.4rem] ph:text-[1.1rem]">{title}</div>
+                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bggray p-2 inline-block pad:text-[1.4rem] ph:text-[1.1rem] padpm:text-[1.4rem]">{title}</div>
             </div>
             <div className="font-Mono text-white text-lg pad:text-[1rem]">{text}</div>
             <div>

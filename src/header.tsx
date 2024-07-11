@@ -115,9 +115,9 @@ function Header() {
                 </svg>
             </div>
             <div className="flex flex-row justify-between items-center w-[32%] pad:w-[36%] ph:hidden">
-                <div className="font-Mono cursor-pointer">Airdrop</div>
-                <div className="font-Mono cursor-pointer">Strategy</div>
-                <div className="font-Mono cursor-pointer">Become Nodes</div>
+                <div className="font-Mono cursor-pointer text-white">Airdrop</div>
+                <div className="font-Mono cursor-pointer text-white">Strategy</div>
+                <div className="font-Mono cursor-pointer text-white">Become Nodes</div>
                 <div className="font-Mono cursor-pointer bg-white text-black rounded-[999px] px-4 py-2">Dashboard</div>
             </div>
             <div
