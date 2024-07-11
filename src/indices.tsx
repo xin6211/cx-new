@@ -6,7 +6,7 @@ import id3Png from "../src/assets/img/id3.png";
 
 function Card({ title, img, text }: { title: string; img: string; text: string }) {
     return (
-        <div className="flex flex-col border border-black bg-white rounded-regular drop-shadow-cardShadow w-[28%] py-[2rem] px-[2rem] pad:w-[32%] pad:aspect-square maxpad:w-[30%] ph:w-full ph:hidden">
+        <div className="flex flex-col border border-black bg-white rounded-regular drop-shadow-cardShadow w-[28%] py-[2rem] px-[2rem] pad:w-[32%] maxpad:h-[20rem] maxpad:w-[30%] ph:w-full ph:hidden">
             <div className="flex flex-row items-center">
                 <img src={img} className="w-[6rem] h-[6rem] pad:w-[4rem] pad:h-[4rem]" />
                 <div className="text-black font-MonoMedium text-3xl ml-[1.6rem] pad:text-[1.6rem]">{title}</div>
