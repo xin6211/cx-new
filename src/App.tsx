@@ -11,7 +11,7 @@ import { Gap } from "./componments";
 
 function App() {
     return (
-        <div className="flex flex-col px-[12rem] pt-[10rem] pad:px-pxpad pad:pt-[8rem] ph:px-pxph ph:pt-[6.4rem] padpm:px-[8rem] maxpad:px-[6rem]">
+        <div className="flex flex-col px-[12rem] pt-[10rem] pad:px-pxpad pad:pt-[8rem] ph:px-pxph ph:pt-[6.4rem] padpm:px-[8rem] maxpad:px-[12rem]">
             <Header />
             <Home />
             <Gap />

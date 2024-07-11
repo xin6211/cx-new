@@ -58,7 +58,7 @@ function Header() {
     };
 
     return (
-        <div className="fixed top-0 left-0 z-10 bg-bgblack w-[100lvw] h-[4rem] px-[8rem] flex flex-row justify-between items-center pad:px-pxpad pad:w-full ph:px-pxph ph:h-[5rem] maxpad:px-[6rem]">
+        <div className="fixed top-0 left-0 z-10 bg-bgblack w-[100lvw] h-[4rem] px-[12rem] flex flex-row justify-between items-center pad:px-pxpad pad:w-full ph:px-pxph ph:h-[5rem] maxpad:px-[12rem] padpm:px-[8rem]">
             <div className="flex flex-row items-center">
                 <div className="flex flex-row justify-evenly items-center">
                     <svg className="pad:w-[3.2rem] ph:w-[2.8rem]" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">

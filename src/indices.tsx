@@ -223,7 +223,7 @@ function Chat() {
 
 function Board() {
     return (
-        <div className="flex flex-col bg-bggray h-[100vh] rounded-regular mb-[12rem] w-full pad:h-[48vh] pad:min-h-[600px] ph:h-[42vh] maxpad:h-[120vh]">
+        <div className="flex flex-col bg-bggray h-[100vh] max-h-[960px] rounded-regular mb-[12rem] w-full pad:h-[48vh] pad:min-h-[600px] ph:h-[42vh] maxpad:h-[120vh]">
             <div className="flex flex-row justify-between items-center px-[calc(2rem+2vw)] h-[calc(2rem+6vh)] pad:h-[10%]">
                 <svg className="pad:w-[4.2rem] ph:w-[3.6rem]" width="80" height="72" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_619_3803)">

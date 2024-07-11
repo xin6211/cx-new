@@ -4,8 +4,8 @@ import smilePng from "../src/assets/img/eco-smile.png";
 
 function Card() {
     return (
-        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bggray px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[320px] maxpad:h-[46vh] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh]">
-            <div className="flex flex-col justify-between w-[60%] ph:w-[68%]">
+        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bggray px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[320px] maxpad:h-[46vh] maxpad:max-h-[386px] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh] padpm:min-h-[26rem]">
+            <div className="flex flex-col justify-between w-[60%] ph:w-[68%] padpm:w-[70%]">
                 <div>
                     <div className="bg-bgpurple p-[2px] font-MonoMedium text-2xl text-black inline-block py-1.5 px-2 rounded-md">Data Contributors</div>
                 </div>
@@ -40,7 +40,7 @@ function Card() {
 
 function CardB() {
     return (
-        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bgblack px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[300px] maxpad:h-[40vh] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh]">
+        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bgblack px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[300px] maxpad:h-[40vh] maxpad:max-h-[386px] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh] padpm:min-h-[26rem]">
             <div className="flex flex-col justify-between w-[60%] ph:w-[68%]">
                 <div>
                     <div className="bg-bgpurple p-[2px] font-MonoMedium text-2xl text-black inline-block py-1.5 px-2 rounded-md">Data Nodes</div>

@@ -10,7 +10,7 @@ function Price() {
                 <div className="text-black ml-[1.2rem] w-[16%] min-w-[16rem] font-Mono">Price trends can be judged through sentiment</div>
             </div>
             <div className="flex flex-row justify-between mt-[3.2rem] pad:mt-0 ph:grid ph:grid-rows-[8.8rem_1fr] ph:grid-cols-2 ph:gap-8">
-                <div className="flex flex-col justify-around bg-bggray border border-black rounded-regular drop-shadow-cardShadow w-[70rem] py-[3rem] px-[2.4rem] ph:col-span-2 ph:row-start-2 ph:w-full ph:px-[1.6rem] ph:py-[2rem] ph:justify-between">
+                <div className="flex flex-col justify-around bg-bggray border border-black rounded-regular drop-shadow-cardShadow w-[70%] py-[3rem] px-[2.4rem] pad:w-[70%] ph:col-span-2 ph:row-start-2 ph:w-full ph:px-[1.6rem] ph:py-[2rem] ph:justify-between">
                     <div className="font-Mono text-black">Sentiment is not just an indicator; it’s the driving force behind demand and supply fluctuations that ultimately drive price movements.</div>
                     <div className="font-Mono text-black">Smart traders blend these sentiment signals with their trading strategies to pinpoint the perfect moments to enter and exit the market.</div>
                 </div>
@@ -35,7 +35,7 @@ function Price() {
                     <div className="bg-bgpurple p-[2px] font-MonumentRegular text-3xl text-black inline-block py-1.5 px-2 rounded-md">Emotion AI</div>
                     <div className="text-black w-[16%] min-w-[16rem] font-Mono">Capturing Market Sentiment with Advanced Emotion AI</div>
                 </div>
-                <div className="flex flex-col justify-around bg-bggray border border-black rounded-regular drop-shadow-cardShadow w-[70rem] py-[3rem] px-[2.4rem] ph:col-span-2 ph:row-start-2 ph:w-full ph:px-[1.6rem] ph:py-[2rem] ph:justify-between">
+                <div className="flex flex-col justify-around bg-bggray border border-black rounded-regular drop-shadow-cardShadow w-[70%] py-[3rem] px-[2.4rem] pad:w-[70%] ph:col-span-2 ph:row-start-2 ph:w-full ph:px-[1.6rem] ph:py-[2rem] ph:justify-between">
                     <div className="font-Mono text-black">
                         Our proprietary Emotion AI large language model uses advanced NLP and machine learning techniques to capture and analyze market sentiment.
                     </div>

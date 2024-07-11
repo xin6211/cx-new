@@ -150,16 +150,14 @@ function Slider() {
                             slidesPerView: 1.5,
                             spaceBetween: 20
                         },
-                        // when window width is >= 480px
                         1200: {
                             slidesPerView: 2,
                             spaceBetween: 30
                         },
-                        1480: {
-                            slidesPerView: 2.5,
-                            spaceBetween: 30
+                        1440: {
+                            slidesPerView: 3,
+                            spaceBetween: 20
                         },
-                        // when window width is >= 640px
                         1800: {
                             slidesPerView: 3.5,
                             spaceBetween: 40
@@ -245,7 +243,7 @@ function Card({ title, text, img, left = false, rotate = false, zindex }: { titl
                 <div className="font-MonoMedium text-black text-3xl ph:text-xl">{title}</div>
                 <div className="font-Mono text-black">{text}</div>
             </div>
-            <img src={img} className="h-[20vh] pad:h-[14vh] ph:h-[8vh]" />
+            <img src={img} className="h-[20vh] pad:h-[14vh] ph:h-[8vh] pad:min-h-[12rem]" />
         </div>
     );
 }
