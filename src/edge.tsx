@@ -238,7 +238,7 @@ function Card({ title, text, img, left = false, rotate = false, zindex }: { titl
     const flexReserver = left ? " flex flex-row-reverse justify-between" : " flex flex-row justify-between";
     const r = rotate ? " rotate-[5deg]" : "";
     return (
-        <div className={"px-24 py-16 bg-bggray border rounded-regular drop-shadow-cardShadow pad:py-8 pad:px-10 ph:px-6 ph:py-8 ph:items-center" + flexReserver + r} style={{ zIndex: zindex }}>
+        <div className={"px-24 py-16 bg-bggray border rounded-regular drop-shadow-cardShadow pad:py-8 pad:px-10 maxpad:py-14 ph:px-6 ph:py-8 ph:items-center" + flexReserver + r} style={{ zIndex: zindex }}>
             <div className="w-[60%] flex flex-col justify-around">
                 <div className="font-MonoMedium text-black text-3xl ph:text-xl">{title}</div>
                 <div className="font-Mono text-black">{text}</div>
