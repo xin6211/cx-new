@@ -131,7 +131,7 @@ function Slider() {
                             spaceBetween: 20
                         },
                         750: {
-                            slidesPerView: 3,
+                            slidesPerView: 2.5,
                             spaceBetween: 20
                         },
                         820: {
@@ -147,11 +147,11 @@ function Slider() {
                             spaceBetween: 20
                         },
                         1160: {
-                            slidesPerView: 1.5,
+                            slidesPerView: 2.5,
                             spaceBetween: 20
                         },
                         1200: {
-                            slidesPerView: 2,
+                            slidesPerView: 2.5,
                             spaceBetween: 30
                         },
                         1440: {
