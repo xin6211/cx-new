@@ -234,16 +234,17 @@ function Slider() {
     );
 }
 
-function Card({ title, text, img, left = false, rotate = false, zindex, textWidth, textWidthPm, textWidthMax }: { title: string; text: string; img: string; left?: boolean; rotate?: boolean; zindex: string; textWidth: string, textWidthPm: string, textWidthMax: string }) {
+function Card({ title, text, img, left = false, rotate = false, zindex, textWidth, textWidthPm }: { title: string; text: string; img: string; left?: boolean; rotate?: boolean; zindex: string; textWidth: string, textWidthPm: string }) {
     const flexReserver = left ? " flex flex-row-reverse justify-between" : " flex flex-row justify-between";
     const r = rotate ? " rotate-[5deg]" : "";
+    const textClass = `w-[${textWidth}%] flex flex-col justify-around padpm:w-[${textWidthPm}%]`
     return (
         <div className={"px-24 py-16 bg-bggray border border-black rounded-regular drop-shadow-cardShadow pad:py-10 pad:px-10 maxpad:py-14 ph:px-6 ph:py-8 ph:items-center padpm:h-[20rem] pad:h-[20rem] maxpad:h-[22rem]" + flexReserver + r} style={{ zIndex: zindex }}>
-            <div className={`w-[${textWidth}%] flex flex-col justify-around padpm:w-[${textWidthPm}%] maxpad:w-[${textWidthMax}%]`}>
+            <div className={textClass}>
                 <div className="font-MonoMedium text-black text-3xl ph:text-xl">{title}</div>
                 <div className="font-Mono text-black">{text}</div>
             </div>
-            <img src={img} className="h-full w-auto ph:h-[8vh] maxpad:h-[90%] maxpad:self-center" />
+            <img src={img} className="h-full w-auto ph:h-[8vh] self-center" />
         </div>
     );
 }
@@ -263,7 +264,6 @@ function Edge() {
                     zindex="4"
                     textWidth="64"
                     textWidthPm="64"
-                    textWidthMax="56"
                 />
                 <Card
                     title="Engage with Users Through Emotional Dialogue for Deeper Insights"
@@ -274,7 +274,6 @@ function Edge() {
                     zindex="3"
                     textWidth="64"
                     textWidthPm="64"
-                    textWidthMax="56"
                 />
                 <Card
                     title="Provide Immersive Emotional Companionship to Users"
@@ -283,9 +282,8 @@ function Edge() {
                     zindex="2"
                     textWidth="64"
                     textWidthPm="64"
-                    textWidthMax="56"
                 />
-                <Card
+                {/* <Card
                     title="Unveil User On-chain Behavioral Preferences for Enhanced Sentiment Analysis"
                     text="Axon Edge gains a deeper understanding of users' on-chain behavioral preferences, allowing it to create personalized user tags to enhance sentiment analysis capabilities."
                     img={edge4}
@@ -294,8 +292,14 @@ function Edge() {
                     zindex="1"
                     textWidth="56"
                     textWidthPm="64"
-                    textWidthMax="60"
-                />
+                /> */}
+                <div className={"px-24 py-16 bg-bggray border border-black rounded-regular drop-shadow-cardShadow pad:py-10 pad:px-10 maxpad:py-14 ph:px-6 ph:py-8 ph:items-center padpm:h-[20rem] pad:h-[20rem] maxpad:h-[22rem] flex flex-row-reverse justify-between rotate-[5deg]"} style={{ zIndex: 1 }}>
+                    <div className="w-[56%] flex flex-col justify-around padpm:w-[64%]">
+                        <div className="font-MonoMedium text-black text-3xl ph:text-xl">"Unveil User On-chain Behavioral Preferences for Enhanced Sentiment Analysis"</div>
+                        <div className="font-Mono text-black">"Axon Edge gains a deeper understanding of users' on-chain behavioral preferences, allowing it to create personalized user tags to enhance sentiment analysis capabilities."</div>
+                    </div>
+                    <img src={edge4} className="h-full w-auto ph:h-[8vh] maxpad:h-[90%] maxpad:self-center" />
+                </div>
             </div>
             <Gap css="mb-[1.6rem]" />
             <div className="flex flex-row mt-20">

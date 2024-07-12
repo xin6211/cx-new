@@ -62,7 +62,7 @@ function GCard({ title, text }: { title: string; text: string }) {
     return (
         <div className="flex flex-col justify-between h-full w-[30%] bg-bggray border border-black rounded-regular drop-shadow-cardShadow py-[calc(1rem+2vh)] px-[calc(1rem+2vw)] pad:py-8 ph:px-4">
             <div>
-                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple py-1 px-1 inline-block pad:text-[1.4rem] ph:text-[1.2rem] maxpad:max-w-full padpm:text-[1.4rem]">{title}</div>
+                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple py-1 px-1 inline-block pad:text-[1.4rem] maxpad:text-[1.3rem] ph:text-[1.2rem] maxpad:max-w-full padpm:text-[1.4rem]">{title}</div>
             </div>
             <div className="font-Mono text-black text-lg pad:text-[1rem]">{text}</div>
             <div className="flex flex-row items-center">
@@ -83,7 +83,7 @@ function GCardR({ title, text }: { title: string; text: string }) {
     return (
         <div className="flex flex-col justify-between h-full w-[30%] bg-bggray border border-black rounded-regular drop-shadow-cardShadow py-[calc(1rem+2vh)] px-[calc(1rem+2vw)] pad:py-8 pad:py-8 ph:px-4">
             <div>
-                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple py-0 px-1 inline-block pad:text-[1.4rem] ph:text-[1.2rem] padpm:text-[1.4rem]">{title}</div>
+                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple py-0 px-1 inline-block pad:text-[1.4rem] maxpad:text-[1.3rem] ph:text-[1.2rem] padpm:text-[1.4rem]">{title}</div>
             </div>
             <div className="font-Mono text-black text-lg pad:text-[1rem]">{text}</div>
             <div className="flex flex-row items-center">
@@ -106,7 +106,7 @@ function GRect({ title, text, typ }: { title: string; text: string; typ: boolean
     return (
         <div className={rootC + bg}>
             <div>
-                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bggray py-0 px-1 inline-block pad:text-[1.4rem] ph:text-[1.1rem] padpm:text-[1.4rem]">{title}</div>
+                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bggray py-0 px-1 inline-block pad:text-[1.4rem] maxpad:text-[1.3rem] ph:text-[1.1rem] padpm:text-[1.4rem]">{title}</div>
             </div>
             <div className="font-Mono text-white text-lg pad:text-[1rem]">{text}</div>
             <div>
@@ -225,7 +225,7 @@ function Chat() {
 
 function Board() {
     return (
-        <div className="flex flex-col bg-bggray h-[100vh] max-h-[960px] rounded-regular mb-[12rem] w-full pad:h-[48vh] pad:min-h-[600px] ph:h-[42vh] maxpad:h-[120vh]">
+        <div className="flex flex-col bg-bggray h-[100vh] max-h-[960px] rounded-regular mb-[12rem] w-full pad:h-[48vh] pad:min-h-[600px] ph:h-[42vh] maxpad:h-[86vh]">
             <div className="flex flex-row justify-between items-center px-[calc(2rem+2vw)] h-[calc(2rem+6vh)] pad:h-[10%]">
                 <svg className="pad:w-[4.2rem] ph:w-[3.6rem]" width="80" height="72" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_619_3803)">
