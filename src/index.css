@@ -60,3 +60,9 @@ html {
     font-family: "Grotesk Regular";
     src: url("./assets/font/spaceGrotesk/SpaceGrotesk-Regular.ttf") format("truetype");
 }
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

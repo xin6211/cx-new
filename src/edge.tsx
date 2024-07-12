@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from "react";
 import { Title, Gap } from "./componments";
-import { Navigation, Pagination, Scrollbar, A11y, Virtual } from "swiper/modules";
 import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,33 +10,37 @@ import w2Png from "../src/assets/img/slide/w2.png";
 import w3Png from "../src/assets/img/slide/w3.png";
 import w4Png from "../src/assets/img/slide/w4.png";
 import w5Png from "../src/assets/img/slide/w5.png";
+import w6Png from "../src/assets/img/slide/w6.png";
+import w7Png from "../src/assets/img/slide/w7.png";
 import w1SmallPng from "../src/assets/img/slide/w1-small.png";
 import w2SmallPng from "../src/assets/img/slide/w2-small.png";
+import w3SmallPng from "../src/assets/img/slide/w3-small.png";
+import w4SmallPng from "../src/assets/img/slide/w4-small.png";
+import w5SmallPng from "../src/assets/img/slide/w5-small.png";
+import w6SmallPng from "../src/assets/img/slide/w6-small.png";
+import w7SmallPng from "../src/assets/img/slide/w7-small.png";
 import edge1 from "../src/assets/img/edge-1.png";
 import edge2 from "../src/assets/img/edge-2.png";
 import edge3 from "../src/assets/img/edge-3.png";
 import edge4 from "../src/assets/img/edge-4.png";
 
-function SliderCard({ img1, img2, name, id, text }: { img1: string; img2: string; name: string; id: string; rank?: string; bouns?: string; text: string }) {
+function SliderCard({ img1, img2, name, id, text, numbers, tags }: { img1: string; img2: string; name: string; id: string; rank?: string; bouns?: string; text: string, numbers: string[], tags: string[] }) {
     return (
-        <div className="flex flex-col w-[26rem] border border-bgblack rounded-regular overflow-hidden pad:w-[24rem] ph:w-[70vw] ph:ml-[12vw]">
+        <div className="flex flex-col w-[26rem] border border-bgblack rounded-regular overflow-hidden pad:w-[24rem] ph:w-[70vw]">
             <div className="relative">
                 <img src={img1} alt="" className="w-full" />
                 <div className="absolute flex justify-between top-[84%] right-2">
-                    <div className="font-Mono bg-bghalfwhite text border border-bghalfwhite rounded-lg px-3 py-1">Tag</div>
-                    <div className="font-Mono bg-bghalfwhite text border border-bghalfwhite rounded-lg px-3 py-1 ml-2">Tag</div>
-                    <div className="font-Mono bg-bghalfwhite text border border-bghalfwhite rounded-lg px-3 py-1 ml-2">Tag</div>
+                    <div className="font-Mono bg-bghalfwhite text border border-bghalfwhite backdrop-blur-lg rounded-[999px] px-3 py-1">{tags[0]}</div>
+                    <div className="font-Mono bg-bghalfwhite text border border-bghalfwhite backdrop-blur-lg rounded-[999px] px-3 py-1 ml-2">{tags[1]}</div>
+                    <div className="font-Mono bg-bghalfwhite text border border-bghalfwhite backdrop-blur-lg rounded-[999px] px-3 py-1 ml-2">{tags[2]}</div>
                 </div>
             </div>
-            <div className="flex flex-row bg-white px-6 py-4">
+            <div className="flex flex-row bg-white px-6 py-4 h-[14rem]">
                 <img src={img2} className="w-[4rem] h-[4rem] mr-6 aspect-square" />
                 <div className="flex flex-col w-[70%] justify-between">
                     <div className="font-MonoMedium text-black text-xl pad:text-lg">{name}</div>
                     <div className="font-Mono text-black">ID:{id}</div>
                     <div className="font-Mono text-black">{text}</div>
-                    {/* <div className="font-MonoMedium text-black text-xl pad:text-lg">
-                        Rank:#{rank} Bonus:{bouns}%
-                    </div> */}
                     <div className="w-full h-[1px] bg-black my-2"></div>
                     <div className="flex flex-row justify-between w-full">
                         <div className="flex">
@@ -58,7 +61,7 @@ function SliderCard({ img1, img2, name, id, text }: { img1: string; img2: string
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <span className="font-Mono text-black ml-1 mr-4 pad:mx-0">34</span>
+                            <span className="font-Mono text-black ml-1 mr-4 pad:mx-0">{numbers[0]}</span>
                         </div>
                         <div className="flex">
                             <svg className="pad:w-[1.6rem] h-[1.6rem]" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +70,7 @@ function SliderCard({ img1, img2, name, id, text }: { img1: string; img2: string
                                     fill="black"
                                 />
                             </svg>
-                            <span className="font-Mono text-black ml-2 mr-6 pad:mx-0">34</span>
+                            <span className="font-Mono text-black ml-2 mr-6 pad:mx-0">{numbers[1]}</span>
                         </div>
                         <div className="flex">
                             <svg className="pad:w-[1.6rem] h-[1.6rem]" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +79,7 @@ function SliderCard({ img1, img2, name, id, text }: { img1: string; img2: string
                                     fill="black"
                                 />
                             </svg>
-                            <span className="font-Mono text-black ml-2 mr-6 pad:mx-0">34</span>
+                            <span className="font-Mono text-black ml-2 mr-6 pad:mx-0">{numbers[2]}</span>
                         </div>
                         <div className="flex">
                             <svg className="pad:w-[1.6rem] h-[1.6rem]" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +88,7 @@ function SliderCard({ img1, img2, name, id, text }: { img1: string; img2: string
                                     fill="black"
                                 />
                             </svg>
-                            <span className="font-Mono text-black ml-2 mr-6 pad:mx-0">34</span>
+                            <span className="font-Mono text-black ml-2 mr-6 pad:mx-0">{numbers[3]}</span>
                         </div>
                     </div>
                 </div>
@@ -116,74 +119,66 @@ function Slider() {
     const [Idx, setIdx] = useState(1);
     const swiper = useRef<SwiperRef>(null);
     return (
-        <div className="bg-bgblack w-[full] h-[56rem] pt-32 pb-16 flex flex-col justify-between border rounded-regular my-16 pad:pt-28 pad:pb-12 ph:pt-10 ph:pb-12 ph:mt-10 ">
-            <div>
+        <div className="bg-bgblack w-full h-[56rem] pt-20 pb-16 flex flex-col justify-between border rounded-regular my-16 pad:pt-28 pad:pb-12 ph:pt-10 ph:pb-12 ph:mt-10 ph:h-[62rem]">
+            <div className="w-full">
                 <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y, Virtual]}
-                    spaceBetween={50}
-                    slidesPerView={"auto"}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log("slide change")}
+                    slidesPerView={3}
+                    className="mySwiper"
                     ref={swiper}
                     breakpoints={{
+                        0: {
+                            slidesPerView: 1,
+                        },
                         640: {
-                            slidesPerView: 2.5,
-                            spaceBetween: 20
+                            slidesPerView: 2,
                         },
                         750: {
-                            slidesPerView: 2.5,
-                            spaceBetween: 20
+                            slidesPerView: 2,
                         },
                         820: {
-                            slidesPerView: 2.5,
-                            spaceBetween: 20
+                            slidesPerView: 2,
                         },
                         960: {
-                            slidesPerView: 3,
-                            spaceBetween: 20
+                            slidesPerView: 2,
                         },
                         1025: {
-                            slidesPerView: 3,
-                            spaceBetween: 20
+                            slidesPerView: 2,
                         },
                         1160: {
                             slidesPerView: 2.5,
-                            spaceBetween: 20
                         },
                         1200: {
-                            slidesPerView: 2.5,
-                            spaceBetween: 30
+                            slidesPerView: 3,
                         },
                         1440: {
                             slidesPerView: 3,
-                            spaceBetween: 20
                         },
                         1800: {
-                            slidesPerView: 3.5,
+                            slidesPerView: 3,
                             spaceBetween: 40
                         }
                     }}
                 >
                     <SwiperSlide>
-                        <SliderCard img1={w1Png} img2={w1SmallPng} name="Olivia Taylor" id="COGEW0080" text="Fantastic home organizer with a cat and puppy." />
+                        <SliderCard img1={w2Png} img2={w2SmallPng} name="Alice Lee" id="COGEW0016" text="An innovative engineer with a thirst for design challenges." numbers={["14", "97", "26", "109"]} tags={["English", "Cat Lover", "Passionate"]} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard img1={w2Png} img2={w1SmallPng} name="Alice Lee" id="COGEW0016" text="An innovative engineer with a thirst for design challenges." />
+                        <SliderCard img1={w4Png} img2={w4SmallPng} name="Jamal Washington" id="COGEW0012" text="Resilient entrepreneur chasing ambitious dreams with confidence." numbers={["27", "188", "28", "34"]} tags={["Logically", "Clever", "English"]} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard img1={w3Png} img2={w2SmallPng} name="Naomi Davis" id="COGEW0049" text="Psychologist known for her keen insight and empathetic approach." />
+                        <SliderCard img1={w1Png} img2={w1SmallPng} name="Olivia Taylor" id="COGEW0080" text="Fantastic home organizer with a cat and puppy." numbers={["78", "146", "34", "534"]} tags={["Engineer", "English", "Smart"]} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard img1={w4Png} img2={w2SmallPng} name="Jamal Washington" id="COGEW0012" text="Resilient entrepreneur chasing ambitious dreams with confidence." />
+                        <SliderCard img1={w3Png} img2={w3SmallPng} name="Naomi Davis" id="COGEW0049" text="Psychologist known for her keen insight and empathetic approach." numbers={["15", "66", "12", "346"]} tags={["Psychologist", "Kind", "Famous"]} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard img1={w5Png} img2={w2SmallPng} name="Ethan Zheng" id="COGEW0104" text="A gentle pediatric dentist with hobbies of playing soccer" />
+                        <SliderCard img1={w5Png} img2={w5SmallPng} name="Ethan Zheng" id="COGEW0104" text="A gentle pediatric dentist with hobbies of playing soccer" numbers={["63", "344", "87", "259"]} tags={["Chinese", "Introvert", "Shy"]} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard img1={w5Png} img2={w2SmallPng} name="Sofia Hernandez" id="COGEW0094" text="Loves dancing and music, and loves to drink red wine with cheese!" />
+                        <SliderCard img1={w6Png} img2={w6SmallPng} name="Sofia Hernandez" id="COGEW0094" text="Loves dancing and music, and loves to drink red wine with cheese!" numbers={["95", "438", "74", "164"]} tags={["Bilingual", "Optimistic", "Music"]} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <SliderCard img1={w5Png} img2={w2SmallPng} name="Ruth Miller" id="COGEW0160" text="Retired schoolteacher, enjoys making brownies and cookies." />
+                        <SliderCard img1={w7Png} img2={w7SmallPng} name="Ruth Miller" id="COGEW0160" text="Retired schoolteacher, enjoys making brownies and cookies." numbers={["64", "791", "37", "191"]} tags={["English", "Kind", "Warm"]} />
                     </SwiperSlide>
                 </Swiper>
             </div>
@@ -205,17 +200,30 @@ function Slider() {
                             />
                         </svg>
                     </div>
-                    <div className="flex flex-row justify-around w-[32%]">
+                    <div className="flex flex-row justify-around w-[32%] ph:hidden">
                         <NaviEle idx={1} cur={Idx} />
                         <NaviEle idx={2} cur={Idx} />
                         <NaviEle idx={3} cur={Idx} />
                         <NaviEle idx={4} cur={Idx} />
                         <NaviEle idx={5} cur={Idx} />
                     </div>
+                    <div className="hidden ph:flex flex-row justify-around w-[50%]">
+                        <NaviEle idx={1} cur={Idx} />
+                        <NaviEle idx={2} cur={Idx} />
+                        <NaviEle idx={3} cur={Idx} />
+                        <NaviEle idx={4} cur={Idx} />
+                        <NaviEle idx={5} cur={Idx} />
+                        <NaviEle idx={6} cur={Idx} />
+                        <NaviEle idx={7} cur={Idx} />
+                    </div>
                     <div
                         className="cursor-pointer"
                         onClick={() => {
-                            if (Idx + 1 <= 5) setIdx(Idx + 1);
+                            let totalPage = 5
+                            if (window.innerWidth < 640) {
+                                totalPage = 7
+                            }
+                            if (Idx + 1 <= totalPage) setIdx(Idx + 1);
                             if (swiper.current) {
                                 swiper.current.swiper.slideNext();
                             }
@@ -230,7 +238,7 @@ function Slider() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
@@ -283,16 +291,6 @@ function Edge() {
                     textWidth="64"
                     textWidthPm="64"
                 />
-                {/* <Card
-                    title="Unveil User On-chain Behavioral Preferences for Enhanced Sentiment Analysis"
-                    text="Axon Edge gains a deeper understanding of users' on-chain behavioral preferences, allowing it to create personalized user tags to enhance sentiment analysis capabilities."
-                    img={edge4}
-                    left={true}
-                    rotate={true}
-                    zindex="1"
-                    textWidth="56"
-                    textWidthPm="64"
-                /> */}
                 <div className={"px-24 py-16 bg-bggray border border-black rounded-regular drop-shadow-cardShadow pad:py-10 pad:px-10 maxpad:py-14 ph:px-6 ph:py-8 ph:items-center padpm:h-[20rem] pad:h-[20rem] maxpad:h-[22rem] flex flex-row-reverse justify-between rotate-[5deg]"} style={{ zIndex: 1 }}>
                     <div className="w-[56%] flex flex-col justify-around padpm:w-[64%]">
                         <div className="font-MonoMedium text-black text-3xl ph:text-xl">"Unveil User On-chain Behavioral Preferences for Enhanced Sentiment Analysis"</div>
