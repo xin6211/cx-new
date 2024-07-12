@@ -4,8 +4,8 @@ import smilePng from "../src/assets/img/eco-smile.png";
 
 function Card() {
     return (
-        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bggray px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[320px] maxpad:h-[50vh] maxpad:max-h-[386px] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh] padpm:min-h-[26rem] padpm:mt-10">
-            <div className="flex flex-col justify-between w-[60%] ph:w-[68%] padpm:w-[70%]">
+        <div className="w-full h-[28rem] flex flex-row justify-between bg-bggray px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[320px] maxpad:h-[28rem] ph:h-[24rem] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh] padpm:h-[28rem] padpm:mt-10">
+            <div className="flex flex-col justify-between w-[70%] ph:w-[68%] maxpad:w-[64%] padpm:w-[70%]">
                 <div>
                     <div className="bg-bgpurple p-[2px] font-MonoMedium text-2xl text-black inline-block py-1.5 px-2 rounded-md">Data Contributors</div>
                 </div>
@@ -18,7 +18,7 @@ function Card() {
                     </div>
                 </div>
                 <div className="flex flex-row mt-6 ph:mt-0">
-                    <div className="bg-bgblack border rounded-2xl text-white font-Mono h-[3.6rem] flex flex-col justify-center px-4">Become Data Contributors</div>
+                    <div className="bg-bgblack border rounded-2xl text-white font-Mono h-[3.6rem] flex flex-col justify-center px-4 ph:whitespace-nowrap">Become Data Contributors</div>
                     <div className="flex flex-row items-center ml-8">
                         <svg className="ph:w-[3rem] ph:h-[3rem]" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="20.5" cy="20.5" r="20.5" fill="#363344" />
@@ -33,15 +33,16 @@ function Card() {
                     </div>
                 </div>
             </div>
-            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[30%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center padpm:w-[32%] padpm:h-[auto]" src={mailPng} />
+            <img className="h-full w-[auto] ph:w-[auto] ph:h-[80%] maxpad:self-center padpm:w-[auto] padpm:h-[20rem]" src={mailPng} />
         </div>
     );
 }
 
 function CardB() {
     return (
-        <div className="w-full h-[42lvh] flex flex-row justify-between bg-bgblack px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[300px] maxpad:h-[40vh] maxpad:max-h-[386px] ph:h-[22vh] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh] padpm:min-h-[26rem]">
-            <div className="flex flex-col justify-between w-[60%] ph:w-[70%] padpm:w-[70%]">
+        <div className="w-full h-[28rem] flex flex-row justify-between bg-bgblack px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[300px] maxpad:h-[28rem] ph:h-[24rem] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 padpm:h-[28rem]">
+            <img className="h-full w-[auto] ph:w-[auto] ph:h-[64%] pad:h-[84%] pad:self-center maxpad:self-center padpm:w-[auto] padpm:h-[20rem]" src={smilePng} />
+            <div className="flex flex-col justify-between w-[60%] ph:w-[60%] padpm:w-[64%]">
                 <div>
                     <div className="bg-bgpurple p-[2px] font-MonoMedium text-2xl text-black inline-block py-1.5 px-2 rounded-md">Data Nodes</div>
                 </div>
@@ -68,7 +69,6 @@ function CardB() {
                     </div>
                 </div>
             </div>
-            <img className="h-full ph:w-[32%] ph:h-[80%] maxpad:w-[30%] maxpad:h-[auto] maxpad:max-h-full maxpad:self-center padpm:w-[32%] padpm:h-[auto]" src={smilePng} />
         </div>
     );
 }

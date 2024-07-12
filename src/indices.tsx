@@ -62,7 +62,7 @@ function GCard({ title, text }: { title: string; text: string }) {
     return (
         <div className="flex flex-col justify-between h-full w-[30%] bg-bggray border border-black rounded-regular drop-shadow-cardShadow py-[calc(1rem+2vh)] px-[calc(1rem+2vw)] pad:py-8 ph:px-4">
             <div>
-                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple py-0 px-1 inline-block pad:text-[1.4rem] ph:text-[1.2rem] maxpad:max-w-full padpm:text-[1.4rem]">{title}</div>
+                <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple py-1 px-1 inline-block pad:text-[1.4rem] ph:text-[1.2rem] maxpad:max-w-full padpm:text-[1.4rem]">{title}</div>
             </div>
             <div className="font-Mono text-black text-lg pad:text-[1rem]">{text}</div>
             <div className="flex flex-row items-center">

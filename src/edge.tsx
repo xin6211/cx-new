@@ -234,16 +234,16 @@ function Slider() {
     );
 }
 
-function Card({ title, text, img, left = false, rotate = false, zindex, textWidth, textWidthPm }: { title: string; text: string; img: string; left?: boolean; rotate?: boolean; zindex: string; textWidth: string, textWidthPm: string }) {
+function Card({ title, text, img, left = false, rotate = false, zindex, textWidth, textWidthPm, textWidthMax }: { title: string; text: string; img: string; left?: boolean; rotate?: boolean; zindex: string; textWidth: string, textWidthPm: string, textWidthMax: string }) {
     const flexReserver = left ? " flex flex-row-reverse justify-between" : " flex flex-row justify-between";
     const r = rotate ? " rotate-[5deg]" : "";
     return (
-        <div className={"px-24 py-16 bg-bggray border border-black rounded-regular drop-shadow-cardShadow pad:py-8 pad:px-10 maxpad:py-14 ph:px-6 ph:py-8 ph:items-center padpm:h-[20rem] pad:h-[18rem] maxpad:h-[22rem]" + flexReserver + r} style={{ zIndex: zindex }}>
-            <div className={`w-[${textWidth}%] flex flex-col justify-around padpm:w-[${textWidthPm}%]`}>
+        <div className={"px-24 py-16 bg-bggray border border-black rounded-regular drop-shadow-cardShadow pad:py-10 pad:px-10 maxpad:py-14 ph:px-6 ph:py-8 ph:items-center padpm:h-[20rem] pad:h-[20rem] maxpad:h-[22rem]" + flexReserver + r} style={{ zIndex: zindex }}>
+            <div className={`w-[${textWidth}%] flex flex-col justify-around padpm:w-[${textWidthPm}%] maxpad:w-[${textWidthMax}%]`}>
                 <div className="font-MonoMedium text-black text-3xl ph:text-xl">{title}</div>
                 <div className="font-Mono text-black">{text}</div>
             </div>
-            <img src={img} className="h-full w-auto ph:h-[8vh]" />
+            <img src={img} className="h-full w-auto ph:h-[8vh] maxpad:h-[90%] maxpad:self-center" />
         </div>
     );
 }
@@ -263,6 +263,7 @@ function Edge() {
                     zindex="4"
                     textWidth="64"
                     textWidthPm="64"
+                    textWidthMax="56"
                 />
                 <Card
                     title="Engage with Users Through Emotional Dialogue for Deeper Insights"
@@ -273,6 +274,7 @@ function Edge() {
                     zindex="3"
                     textWidth="64"
                     textWidthPm="64"
+                    textWidthMax="56"
                 />
                 <Card
                     title="Provide Immersive Emotional Companionship to Users"
@@ -281,6 +283,7 @@ function Edge() {
                     zindex="2"
                     textWidth="64"
                     textWidthPm="64"
+                    textWidthMax="56"
                 />
                 <Card
                     title="Unveil User On-chain Behavioral Preferences for Enhanced Sentiment Analysis"
@@ -291,6 +294,7 @@ function Edge() {
                     zindex="1"
                     textWidth="56"
                     textWidthPm="64"
+                    textWidthMax="60"
                 />
             </div>
             <Gap css="mb-[1.6rem]" />
