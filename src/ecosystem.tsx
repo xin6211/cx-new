@@ -33,7 +33,7 @@ function Card() {
                     </div>
                 </div>
             </div>
-            <img className="h-full w-[auto] ph:w-[auto] ph:h-[80%] maxpad:self-center padpm:w-[auto] padpm:h-[20rem]" src={mailPng} />
+            <img className="h-full w-[auto] ph:w-[auto] ph:h-[80%] maxpad:self-center padpm:w-[auto] padpm:h-full" src={mailPng} />
         </div>
     );
 }
@@ -41,8 +41,8 @@ function Card() {
 function CardB() {
     return (
         <div className="w-full h-[28rem] flex flex-row justify-between bg-bgblack px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[300px] maxpad:h-[28rem] ph:h-[24rem] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 padpm:h-[28rem]">
-            <img className="h-full w-[auto] ph:w-[auto] ph:h-[64%] pad:h-[84%] pad:self-center maxpad:self-center padpm:w-[auto] padpm:h-[20rem]" src={smilePng} />
-            <div className="flex flex-col justify-between w-[60%] ph:w-[60%] padpm:w-[64%]">
+            <img className="h-full w-[auto] ph:w-[auto] ph:h-[82%] pad:h-[90%] pad:self-center maxpad:self-center padpm:w-[auto] padpm:h-full" src={smilePng} />
+            <div className="flex flex-col justify-between w-[70%] ph:w-[60%] padpm:w-[70%]">
                 <div>
                     <div className="bg-bgpurple p-[2px] font-MonoMedium text-2xl text-black inline-block py-1.5 px-2 rounded-md">Data Nodes</div>
                 </div>

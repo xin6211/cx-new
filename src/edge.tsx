@@ -124,6 +124,7 @@ function Slider() {
                 <Swiper
                     slidesPerView={3}
                     className="mySwiper"
+                    loop={true}
                     ref={swiper}
                     breakpoints={{
                         0: {
