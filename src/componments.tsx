@@ -59,5 +59,5 @@ export function GapR({ css = "my-[1.6rem]" }: { css?: string }) {
 }
 
 export function Title({ text }: { text: string }) {
-    return <div className="bg-bgpurple p-[2px] font-MonumentRegular text-3xl text-black inline-block py-1.5 px-2 rounded-md mb-20 pad:mb-[3rem] ph:text-2xl ph:mb-[2rem] padpm:mb-10">{text}</div>
+    return <div className="bg-bgpurple p-[2px] font-MonumentRegular text-3xl text-black inline-block py-1.5 px-2 rounded-md mb-12 pad:mb-[3rem] ph:text-2xl ph:mb-[2rem] padpm:mb-10">{text}</div>
 }

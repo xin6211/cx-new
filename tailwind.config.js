@@ -15,6 +15,19 @@ export default {
                 'pxpad': '1.4rem',
                 "pxph": '1rem',
             },
+            animation: {
+                ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
+            },
+            keyframes: {
+                ripple: {
+                    "0%, 100%": {
+                        transform: "translate(-50%, -50%) scale(1)",
+                    },
+                    "50%": {
+                        transform: "translate(-50%, -50%) scale(0.9)",
+                    },
+                },
+            },
         },
         borderRadius: {
             'regular': '3.2rem',
@@ -66,7 +79,8 @@ export default {
             "bgblack": "rgba(54,52,68,1)",
             "bgpurple": "rgba(178,160,229,1)",
             "bghalfwhite": "rgba(255,255,255,0.39)",
-            "borderlinear": "rgba(168,140,244,1)"
+            "borderlinear": "rgba(168,140,244,1)",
+            "neutral": "rgb(245 245 245)"
         }
     },
     plugins: [],

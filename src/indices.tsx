@@ -1,18 +1,39 @@
 import { useState } from "react";
 import { Title, GapL, Gap } from "./componments";
+import Ripple from "./animate/ripple";
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import id0Png from "../src/assets/img/id0.png";
 import id2Png from "../src/assets/img/id2.png";
 import id3Png from "../src/assets/img/id3.png";
 
 function Card({ title, img, text }: { title: string; img: string; text: string }) {
+    const mouseX = useMotionValue(0);
+    const mouseY = useMotionValue(0);
+    const gradientSize = 200
+    const gradientColor = "rgba(217, 217, 217, 0.333)"
     return (
-        <div className="flex flex-col border border-black bg-white rounded-regular drop-shadow-cardShadow w-[28%] py-[2rem] px-[2rem] pad:w-[32%] maxpad:h-[20rem] maxpad:w-[30%] ph:w-full ph:hidden">
-            <div className="flex flex-row items-center">
+        <div
+            onMouseMove={(e) => {
+                const { left, top } = e.currentTarget.getBoundingClientRect();
+
+                mouseX.set(e.clientX - left);
+                mouseY.set(e.clientY - top);
+            }}
+            className="group relative flex flex-col border border-black bg-neutral rounded-regular drop-shadow-cardShadow w-[28%] py-[2rem] px-[2rem] pad:w-[32%] maxpad:h-[20rem] maxpad:w-[30%] ph:w-full ph:hidden">
+            <div className="relative flex flex-row items-center z-[1]">
                 <img src={img} className="w-[6rem] h-[6rem] pad:w-[4rem] pad:h-[4rem]" />
                 <div className="text-black font-MonoMedium text-3xl ml-[1.6rem] pad:text-[1.6rem]">{title}</div>
             </div>
-            <div className="w-full h-[1px] bg-black my-[1.6rem]"></div>
-            <div className="font-Mono text-black mb-[3.2rem] pad:mb-[0rem] ph:mb-0">{text}</div>
+            <div className="relative w-full h-[1px] bg-black my-[1.6rem] z-[1]"></div>
+            <div className="relative font-Mono text-black mb-[3.2rem] pad:mb-[0rem] ph:mb-0 z-[1]">{text}</div>
+            <motion.div
+                className="w-full h-full pointer-events-none absolute -inset-px rounded-regular opacity-0 transition duration-300 group-hover:opacity-100 z-[0]"
+                style={{
+                    background: useMotionTemplate`
+						radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px, ${gradientColor}, transparent 100%)
+					`,
+                }}
+            />
         </div>
     );
 }
@@ -65,7 +86,7 @@ function GCard({ title, text }: { title: string; text: string }) {
                 <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple py-1 px-1 inline-block pad:text-[1.4rem] maxpad:text-[1.3rem] ph:text-[1.2rem] maxpad:max-w-full padpm:text-[1.4rem]">{title}</div>
             </div>
             <div className="font-Mono text-black text-lg pad:text-[1rem]">{text}</div>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center hover:scale-[1.15] duration-75 origin-left">
                 <svg className="pad:w-[3rem] pad:h-[3rem] ph:w-[3rem] ph:h-[3rem]" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="27.6673" cy="27.3333" r="26.6667" fill="#191A23" stroke="#B2A0E5" stroke-width="1.33333" />
                     <path
@@ -86,7 +107,7 @@ function GCardR({ title, text }: { title: string; text: string }) {
                 <div className="font-MonumentRegular rounded-md text-black text-3xl bg-bgpurple py-0 px-1 inline-block pad:text-[1.4rem] maxpad:text-[1.3rem] ph:text-[1.2rem] padpm:text-[1.4rem]">{title}</div>
             </div>
             <div className="font-Mono text-black text-lg pad:text-[1rem]">{text}</div>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center hover:scale-[1.15] duration-75 origin-left">
                 <svg className="pad:w-[3rem] pad:h-[3rem] ph:w-[3rem] ph:h-[3rem]" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="27.6673" cy="27.3333" r="26.6667" fill="#191A23" stroke="#B2A0E5" stroke-width="1.33333" />
                     <path
@@ -111,7 +132,7 @@ function GRect({ title, text, typ }: { title: string; text: string; typ: boolean
             <div className="font-Mono text-white text-lg pad:text-[1rem]">{text}</div>
             <div>
                 {typ ? (
-                    <div className="flex flex-row items-center">
+                    <div className="flex flex-row items-center hover:scale-[1.15] duration-75 origin-left">
                         <svg className="pad:w-[3rem] pad:h-[3rem] ph:w-[3rem] ph:h-[3rem]" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="27.6673" cy="27.3333" r="26.6667" fill="#191A23" stroke="#B2A0E5" stroke-width="1.33333" />
                             <path
@@ -122,7 +143,7 @@ function GRect({ title, text, typ }: { title: string; text: string; typ: boolean
                         <div className="font-Mono text-black ml-4">Learn more</div>
                     </div>
                 ) : (
-                    <div className="flex flex-row items-center">
+                    <div className="flex flex-row items-center hover:scale-[1.15] duration-75 origin-left">
                         <svg className="pad:w-[3rem] pad:h-[3rem] ph:w-[3rem] ph:h-[3rem]" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="27.3333" cy="27.3333" r="26.6667" fill="#F3F3F3" stroke="#B2A0E5" stroke-width="1.33333" />
                             <path
@@ -262,8 +283,13 @@ function Board() {
                 </svg>
             </div>
             <div className="w-full h-[1px] bg-black"></div>
-            <div className="bg-no-repeat bg-dsBgImg bg-dsBgSize bg-dsBgPos flex flex-row justify-center items-center w-full h-[calc(calc(100%-calc(2rem+6vh))-1px)]">
-                <div className="relative aspect-square w-[8%] top-[2%]">
+            <div className="bg-no-repeat bg-dsBgImg bg-dsBgSize bg-dsBgPos flex flex-row justify-center items-center w-full h-[calc(calc(100%-calc(2rem+6vh))-1px)] relative">
+                <Ripple />
+                <div className="w-[8%] relative">
+                    <svg className="w-full h-full" width="155" height="155" viewBox="0 0 155 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="77.2083" cy="77.2083" r="75.0833" fill="#B2A0E5" stroke="black" stroke-width="4.25" />
+                        <path d="M77.7803 95.6846H53.918L49.4355 109H35.2852L58.4004 44.2246H73.6934L96.6328 109H81.9551L77.7803 95.6846ZM74.001 84.5225L65.915 59.0342L57.5654 84.5225H74.001ZM102.94 44.2246H116.387V109H102.94V44.2246Z" fill="black" />
+                    </svg>
                     <News />
                     <Chat />
                     <Communities />
