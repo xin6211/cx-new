@@ -5,7 +5,7 @@ import BoxReveal from "./animate/boxreveal";
 
 function Card() {
     return (
-        <div className="w-full h-[28rem] flex flex-row justify-between bg-bggray px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[320px] maxpad:h-[28rem] ph:h-[24rem] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 maxpad:h-[38vh] padpm:h-[28rem] padpm:mt-10">
+        <div className="w-full h-[28rem] flex flex-row justify-between bg-bggray px-16 py-16 border rounded-regular mt-16 pad:h-[28vh] pad:min-h-[320px] maxpad:h-[28rem] ph:h-[24rem] ph:py-8 ph:px-12 ph:items-center maxpad:py-12 padpm:h-[28rem] maxpad:h-[28rem] padpm:mt-10">
             <div className="flex flex-col justify-between w-[70%] ph:w-[68%] maxpad:w-[64%] padpm:w-[70%]">
                 <BoxReveal boxColor={"rgba(178,160,229,1)"} duration={0.5}>
                     <div>

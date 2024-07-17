@@ -26,6 +26,12 @@ export interface CoolParticleOptions extends BaseParticleOptions {
     speedUp?: number;
 }
 
+const randomColor = (): string => {
+    const colors = ["#B2A0E5", "#CAB8FA", "#A189E6", "#E6C1FA", "#EED4FC", "#BD73E8"];
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
+}
+
 const getContainer = () => {
     const id = "_coolMode_effect";
     const existingContainer = document.getElementById(id);
@@ -86,10 +92,11 @@ const applyParticleEffect = (
             circle.setAttributeNS(null, "cx", (size / 2).toString());
             circle.setAttributeNS(null, "cy", (size / 2).toString());
             circle.setAttributeNS(null, "r", (size / 2).toString());
+            const bgColor = randomColor();
             circle.setAttributeNS(
                 null,
                 "fill",
-                `hsl(${Math.random() * 360}, 70%, 50%)`,
+                `${bgColor}`,
             );
 
             circleSVG.appendChild(circle);

@@ -88,7 +88,7 @@ function GCard({ title, text }: { title: string; text: string }) {
             <div className="font-Mono text-black text-lg pad:text-[1rem]">{text}</div>
             <div className="flex flex-row items-center hover:scale-[1.15] duration-75 origin-left">
                 <svg className="pad:w-[3rem] pad:h-[3rem] ph:w-[3rem] ph:h-[3rem]" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="27.6673" cy="27.3333" r="26.6667" fill="#191A23" stroke="#B2A0E5" stroke-width="1.33333" />
+                    <circle cx="27.6673" cy="27.3333" r="26.6667" fill="#191A23" stroke="#B2A0E5" strokeWidth="1.33333" />
                     <path
                         d="M15.334 32.9347C14.3774 33.487 14.0496 34.7102 14.6019 35.6667C15.1542 36.6233 16.3774 36.9511 17.334 36.3988L15.334 32.9347ZM41.3598 21.8511C41.6457 20.7841 41.0126 19.6874 39.9456 19.4016L22.559 14.7428C21.492 14.4569 20.3954 15.0901 20.1095 16.157C19.8236 17.224 20.4568 18.3206 21.5237 18.6065L36.9785 22.7476L32.8374 38.2024C32.5515 39.2694 33.1847 40.366 34.2516 40.6519C35.3185 40.9378 36.4152 40.3046 36.7011 39.2377L41.3598 21.8511ZM17.334 36.3988L40.428 23.0655L38.428 19.6014L15.334 32.9347L17.334 36.3988Z"
                         fill="#B2A0E5"
@@ -109,7 +109,7 @@ function GCardR({ title, text }: { title: string; text: string }) {
             <div className="font-Mono text-black text-lg pad:text-[1rem]">{text}</div>
             <div className="flex flex-row items-center hover:scale-[1.15] duration-75 origin-left">
                 <svg className="pad:w-[3rem] pad:h-[3rem] ph:w-[3rem] ph:h-[3rem]" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="27.6673" cy="27.3333" r="26.6667" fill="#191A23" stroke="#B2A0E5" stroke-width="1.33333" />
+                    <circle cx="27.6673" cy="27.3333" r="26.6667" fill="#191A23" stroke="#B2A0E5" strokeWidth="1.33333" />
                     <path
                         d="M15.334 32.9347C14.3774 33.487 14.0496 34.7102 14.6019 35.6667C15.1542 36.6233 16.3774 36.9511 17.334 36.3988L15.334 32.9347ZM41.3598 21.8511C41.6457 20.7841 41.0126 19.6874 39.9456 19.4016L22.559 14.7428C21.492 14.4569 20.3954 15.0901 20.1095 16.157C19.8236 17.224 20.4568 18.3206 21.5237 18.6065L36.9785 22.7476L32.8374 38.2024C32.5515 39.2694 33.1847 40.366 34.2516 40.6519C35.3185 40.9378 36.4152 40.3046 36.7011 39.2377L41.3598 21.8511ZM17.334 36.3988L40.428 23.0655L38.428 19.6014L15.334 32.9347L17.334 36.3988Z"
                         fill="#B2A0E5"
@@ -134,7 +134,7 @@ function GRect({ title, text, typ }: { title: string; text: string; typ: boolean
                 {typ ? (
                     <div className="flex flex-row items-center hover:scale-[1.15] duration-75 origin-left">
                         <svg className="pad:w-[3rem] pad:h-[3rem] ph:w-[3rem] ph:h-[3rem]" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="27.6673" cy="27.3333" r="26.6667" fill="#191A23" stroke="#B2A0E5" stroke-width="1.33333" />
+                            <circle cx="27.6673" cy="27.3333" r="26.6667" fill="#191A23" stroke="#B2A0E5" strokeWidth="1.33333" />
                             <path
                                 d="M15.334 32.9347C14.3774 33.487 14.0496 34.7102 14.6019 35.6667C15.1542 36.6233 16.3774 36.9511 17.334 36.3988L15.334 32.9347ZM41.3598 21.8511C41.6457 20.7841 41.0126 19.6874 39.9456 19.4016L22.559 14.7428C21.492 14.4569 20.3954 15.0901 20.1095 16.157C19.8236 17.224 20.4568 18.3206 21.5237 18.6065L36.9785 22.7476L32.8374 38.2024C32.5515 39.2694 33.1847 40.366 34.2516 40.6519C35.3185 40.9378 36.4152 40.3046 36.7011 39.2377L41.3598 21.8511ZM17.334 36.3988L40.428 23.0655L38.428 19.6014L15.334 32.9347L17.334 36.3988Z"
                                 fill="#B2A0E5"
@@ -145,7 +145,7 @@ function GRect({ title, text, typ }: { title: string; text: string; typ: boolean
                 ) : (
                     <div className="flex flex-row items-center hover:scale-[1.15] duration-75 origin-left">
                         <svg className="pad:w-[3rem] pad:h-[3rem] ph:w-[3rem] ph:h-[3rem]" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="27.3333" cy="27.3333" r="26.6667" fill="#F3F3F3" stroke="#B2A0E5" stroke-width="1.33333" />
+                            <circle cx="27.3333" cy="27.3333" r="26.6667" fill="#F3F3F3" stroke="#B2A0E5" strokeWidth="1.33333" />
                             <path
                                 d="M15 32.9347C14.0434 33.487 13.7157 34.7102 14.2679 35.6667C14.8202 36.6233 16.0434 36.9511 17 36.3988L15 32.9347ZM41.0259 21.8511C41.3117 20.7841 40.6786 19.6874 39.6116 19.4016L22.225 14.7428C21.1581 14.4569 20.0614 15.0901 19.7755 16.157C19.4896 17.224 20.1228 18.3206 21.1897 18.6065L36.6445 22.7476L32.5034 38.2024C32.2175 39.2694 32.8507 40.366 33.9176 40.6519C34.9846 40.9378 36.0812 40.3046 36.3671 39.2377L41.0259 21.8511ZM17 36.3988L40.094 23.0655L38.094 19.6014L15 32.9347L17 36.3988Z"
                                 fill="#B2A0E5"
@@ -201,7 +201,7 @@ function Communities() {
             <div>
                 <div className="p-[0.5rem] border border-2 border-black bg-white">
                     <svg className="ph:w-[2rem] ph:h-[2rem]" width="42" height="42" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_1072_2259)">
+                        <g clipPath="url(#clip0_1072_2259)">
                             <path
                                 d="M31.358 10.1439C30.5522 8.23941 29.3802 6.4814 27.9152 5.01639L27.6954 4.79664C24.6922 1.93988 20.6634 0.328369 16.4881 0.328369C12.1664 0.328369 8.13759 2.01313 5.06107 5.01639V5.08964C2.05781 8.16616 0.373047 12.1949 0.373047 16.4435C0.373047 18.2015 0.666048 19.813 1.1788 21.4245C1.69155 22.8895 2.35081 24.2812 3.22981 25.5997L3.37631 25.7462V31.8993C3.37631 32.1923 3.66931 32.4853 3.96232 32.4853H16.4881C18.6856 32.4853 20.7367 32.0458 22.7877 31.24C24.6922 30.4343 26.4502 29.2623 27.9152 27.7973L28.1349 27.5775C31.065 24.5742 32.6765 20.6187 32.6765 16.3702C32.6032 14.2459 32.1637 12.1949 31.358 10.1439ZM22.2749 19.0072L16.4881 24.5742C16.4149 24.6475 16.2684 24.7207 16.1219 24.7207C15.9754 24.7207 15.9021 24.6475 15.7556 24.5742L10.0421 19.0805L9.96885 19.0072C8.57709 17.6155 8.21084 15.8574 8.87009 14.1727C9.60259 12.3414 11.4339 11.0962 13.3384 11.0962C14.2174 11.0962 15.0964 11.3892 15.9021 11.9019L16.0486 11.9752L16.1951 11.9019C17.0009 11.3892 17.8799 11.0962 18.7589 11.0962C20.6634 11.0962 22.4947 12.3414 23.2272 14.1727C24.0329 15.8574 23.6667 17.6155 22.2749 19.0072Z"
                                 fill="black"
@@ -249,11 +249,11 @@ function Board() {
         <div className="flex flex-col bg-bggray h-[100vh] max-h-[960px] rounded-regular mb-[12rem] w-full pad:h-[48vh] pad:min-h-[600px] ph:h-[42vh] maxpad:h-[86vh]">
             <div className="flex flex-row justify-between items-center px-[calc(2rem+2vw)] h-[calc(2rem+6vh)] pad:h-[10%]">
                 <svg className="pad:w-[4.2rem] ph:w-[3.6rem]" width="80" height="72" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_619_3803)">
+                    <g clipPath="url(#clip0_619_3803)">
                         <path
                             d="M11.1504 39.9867L31.6491 60.4853L37.2884 54.8533L22.429 39.9867H69.1382V32.0133H22.429L37.2884 17.1467L31.6491 11.5146L11.1504 32.0133V39.9867Z"
                             stroke="#3E3E3E"
-                            stroke-miterlimit="10"
+                            strokeMiterlimit="10"
                         />
                     </g>
                     <defs>
@@ -268,11 +268,11 @@ function Board() {
                     <div className="font-Mono text-black cursor-pointer ph:w-[20%] ph:text-center ph:font-MonoMedium">1O1 AI CHAT</div>
                 </div>
                 <svg className="pad:w-[4.2rem] ph:w-[3.6rem]" width="80" height="72" viewBox="0 0 80 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_619_3808)">
+                    <g clipPath="url(#clip0_619_3808)">
                         <path
                             d="M68.8496 39.9867L48.3509 60.4853L42.7116 54.8533L57.571 39.9867H10.8618V32.0133H57.571L42.7116 17.1467L48.3509 11.5146L68.8496 32.0133V39.9867Z"
                             stroke="#3E3E3E"
-                            stroke-miterlimit="10"
+                            strokeMiterlimit="10"
                         />
                     </g>
                     <defs>
@@ -287,7 +287,7 @@ function Board() {
                 <Ripple />
                 <div className="w-[8%] relative">
                     <svg className="w-full h-full" width="155" height="155" viewBox="0 0 155 155" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="77.2083" cy="77.2083" r="75.0833" fill="#B2A0E5" stroke="black" stroke-width="4.25" />
+                        <circle cx="77.2083" cy="77.2083" r="75.0833" fill="#B2A0E5" stroke="black" strokeWidth="4.25" />
                         <path d="M77.7803 95.6846H53.918L49.4355 109H35.2852L58.4004 44.2246H73.6934L96.6328 109H81.9551L77.7803 95.6846ZM74.001 84.5225L65.915 59.0342L57.5654 84.5225H74.001ZM102.94 44.2246H116.387V109H102.94V44.2246Z" fill="black" />
                     </svg>
                     <News />

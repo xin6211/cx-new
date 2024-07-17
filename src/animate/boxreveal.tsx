@@ -18,7 +18,7 @@ export const BoxReveal = ({
     const slideControls = useAnimation();
 
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    const isInView = useInView(ref, { once: false });
 
     useEffect(() => {
         if (isInView) {
