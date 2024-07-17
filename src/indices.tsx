@@ -10,7 +10,7 @@ function Card({ title, img, text }: { title: string; img: string; text: string }
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
     const gradientSize = 200
-    const gradientColor = "rgba(217, 217, 217, 0.333)"
+    const gradientColor = "rgba(178,160,229,0.33)"
     return (
         <div
             onMouseMove={(e) => {
@@ -19,7 +19,7 @@ function Card({ title, img, text }: { title: string; img: string; text: string }
                 mouseX.set(e.clientX - left);
                 mouseY.set(e.clientY - top);
             }}
-            className="group relative flex flex-col border border-black bg-neutral rounded-regular drop-shadow-cardShadow w-[28%] py-[2rem] px-[2rem] pad:w-[32%] maxpad:h-[20rem] maxpad:w-[30%] ph:w-full ph:hidden">
+            className="group relative flex flex-col border border-black bg-white rounded-regular drop-shadow-cardShadow w-[28%] py-[2rem] px-[2rem] pad:w-[32%] maxpad:h-[20rem] maxpad:w-[30%] ph:w-full ph:hidden">
             <div className="relative flex flex-row items-center z-[1]">
                 <img src={img} className="w-[6rem] h-[6rem] pad:w-[4rem] pad:h-[4rem]" />
                 <div className="text-black font-MonoMedium text-3xl ml-[1.6rem] pad:text-[1.6rem]">{title}</div>
@@ -176,7 +176,7 @@ function Grid() {
 
 function News() {
     return (
-        <div className="flex flex-row items-center w-[24rem] absolute right-[180%] top-[-64%] ph:top-[-170%] ph:right-[-25%]">
+        <div className="flex flex-row items-center w-[24rem] absolute right-[180%] top-[-50%] ph:top-[-170%] ph:right-[-25%]">
             <div className="mr-4 flex flex-col items-end ph:w-[25vw]">
                 <div className="font-MonoMedium text-black text-2xl text-right mb-1">Social Media & News</div>
                 <div className="font-Mono text-black text-right w-[90%]">Monitor social mentions and key news to understand overall market sentiment.</div>
